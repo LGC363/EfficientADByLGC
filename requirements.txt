@@ -1,1 +1,16 @@
  
+---
+
+### **requirements.txt**
+`requirements.txt` 列出项目所需的 Python 包。
+
+```txt
+torch==1.13.1
+torchvision==0.14.1
+matplotlib==3.5.3
+opencv-python==4.6.0.66
+scikit-learn==1.2.2
+scikit-image==0.19.3
+albumentations==1.3.0
+tqdm==4.64.1
+
