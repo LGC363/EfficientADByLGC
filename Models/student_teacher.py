@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from models.feature_extractor import PatchDescriptionNetwork
+from models.feature_extractor import PatchDescriptionNetwork 
 
 class StudentTeacherModel(nn.Module):
     def __init__(self):
@@ -18,4 +18,3 @@ if __name__ == "__main__":
     sample_input = torch.randn(1, 3, 256, 256)
     teacher_out, student_out = model(sample_input)
     print(f"Teacher Output: {teacher_out.shape}, Student Output: {student_out.shape}")
-

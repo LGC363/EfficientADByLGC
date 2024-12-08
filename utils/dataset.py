@@ -1,4 +1,5 @@
 import os
+import torch
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from PIL import Image
@@ -27,4 +28,3 @@ def load_data(data_dir, batch_size=32):
     dataset = MVTECDataset(data_dir, transform)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     return dataloader
-

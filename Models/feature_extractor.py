@@ -24,4 +24,3 @@ if __name__ == "__main__":
     sample_input = torch.randn(1, 3, 256, 256)  # 假设输入为 256x256 图片
     output = model(sample_input)
     print(f"Output shape: {output.shape}")  # 应输出 [1, 384, 15, 15]
-
